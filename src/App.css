@@ -8,7 +8,7 @@
     background:#eeeeee;
     background-image: url('./images/body-bg.png');
     background-size: 300px;
-    background-blend-mode:color-dodge;
+    background-blend-mode:color-burn;
     color:#171717;
 }
 .container{
