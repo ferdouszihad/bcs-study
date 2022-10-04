@@ -5,7 +5,6 @@ import Study from "./components/Study/Study";
 function App() {
   return (
     <div className="body-main">
-      <Header></Header>
       <Study></Study>
     </div>
   );

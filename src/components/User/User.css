@@ -1,0 +1,24 @@
+.user-container{
+    margin-bottom: 30px;
+}
+.user-profile{
+    margin:0 auto 30px;
+    display:flex;
+    gap:20px;
+    align-items: center;
+}
+.user-details{
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding:20px;
+    background-color:lightcyan;
+    border-radius:13px;
+}
+.user-details div{
+    min-width: 80px;
+    background:#fff;
+    padding:3px;
+    border-radius:7px;
+}

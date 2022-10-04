@@ -1,10 +1,23 @@
 .Study-container{
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
+}
+.Study-container .title{
+    margin:50px 0 30px;
 }
 .study-items-container{
     display:grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 30px ;
+}
+.study-information-container{
+    position: relative;
+    background-color: #fff;
+    
+}
+.study-information{
+    position: sticky;
+    top:-100px;
+    padding:20px;
 }
 

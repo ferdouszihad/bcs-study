@@ -21,7 +21,7 @@ const StudyItem = (props) => {
         </div>
       </div>
       <div className="card-footer">
-        <button className="card-btn">Add to List</button>
+        <button className="card-btn">Add to list</button>
       </div>
     </div>
   );

@@ -5,12 +5,15 @@
 }
 .body-main{
     font-family: 'Poppins', sans-serif;
-    background:#eeeeee;
+    background:#e5fee6;
     background-image: url('./images/body-bg.png');
     background-attachment: fixed;
     background-size: 300px;
     background-blend-mode:color-burn;
-    color:#171717;
+    color:#19291c;
+}
+h3{
+    font-weight: 600;
 }
 .container{
     width:80%;

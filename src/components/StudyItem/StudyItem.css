@@ -1,15 +1,17 @@
 .study-item-card{
-    background: rgba(255, 255, 255, 0.758);
+    background: #fff;
     border-radius: 7px;
     overflow: hidden;
-    box-shadow: 0 0 40px -12px #171717;
+    box-shadow: rgb(146 216 144) 0px 0px 40px -12px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
 
 }
 .card-img img{
+    background-color: #79d628;
     width: 100%;
+    opacity: .8;
     
 }
 .card-text{
@@ -26,25 +28,30 @@
     text-align: justify;
 }
 .card-footer{
-    margin-top: 30px;
+    margin-top: 0;
 }
 .card-btn {
+    display: block;
     border: none;
     padding: 13px;
-    width: 100%;
+    width: 92%;
+    margin: 20px auto ;
+    border-radius: 15px;
     text-align: center;
     background: #176b28;
-    background-image: linear-gradient(45deg, black, transparent,black);
-    font-weight: 700;
+    background-image:  url('../../images/body-bg.png'),linear-gradient(45deg, #171717, transparent,#171717);
     color: #fff;
-    font-size: 16px;
+    background-blend-mode: color;
+    font-size: 18px;
+    letter-spacing: 1px;
     cursor: pointer;
+    transition: .3s all;
 }
 .card-btn:hover {
     border: none;
-    background: #a60f0f;
-    background-image: linear-gradient(45deg, black, transparent,black);
-    font-weight: 700;
+    background: #ea2929;
+    background-image: linear-gradient(45deg, #171717, transparent,#171717);
+    font-weight: 500;
     color: #fff;
-    font-size: 18px;
+    
 }
