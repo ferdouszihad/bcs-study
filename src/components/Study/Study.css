@@ -1,0 +1,10 @@
+.Study-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.study-items-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px ;
+}
+
