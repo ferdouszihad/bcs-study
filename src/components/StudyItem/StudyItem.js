@@ -2,7 +2,7 @@ import React from "react";
 import "./StudyItem.css";
 
 const StudyItem = (props) => {
-  const { img, name, studyTime, distribution, shortDetail } = props.details;
+  const { img, name, studyTime, distribution } = props.details;
   return (
     <div class="study-item-card">
       <div className="card-body">

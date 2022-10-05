@@ -9,7 +9,8 @@
 
 }
 .card-img img{
-    background-color: #79d628;
+    background: #176b28;
+    background-image:  url('../../images/body-bg.png'),linear-gradient(45deg, #171717, transparent,#171717);
     width: 100%;
     opacity: .8;
     
@@ -20,10 +21,19 @@
     flex-direction: column;
     row-gap: 10px;
 }
+.card-text p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.card-text p strong{
+    font-weight: 500;
+}
 .card-text h3{
     min-height: 60px;
     border-bottom: 2px solid #ddd;
+    font-size: 500;
 }
+
 .card-text .details{
     text-align: justify;
 }
