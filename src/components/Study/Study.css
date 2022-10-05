@@ -26,7 +26,7 @@
 }
 .study-information{
    position: sticky;
-    top:-40vh; 
+    top:-35vh; 
     padding:20px;
     
 }
@@ -44,7 +44,7 @@
     .study-items-container{
         grid-template-columns: repeat(2,1fr);
     }
-     .user-details{
+    .user-details{
         display:none;
     } 
 }
@@ -70,6 +70,9 @@
         display: block;
         text-decoration:none;
     }
+    .user-details{
+        display:flex;
+    } 
     
     
     
