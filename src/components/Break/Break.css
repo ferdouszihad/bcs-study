@@ -1,17 +1,17 @@
 .break-time{
     margin-top: 15px;
     display:flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 5px;
     text-align: center;
-    align-items: center;
-    padding:20px;
+    padding:20px 5px;
     background-color:lightcyan;
     border-radius:13px;
 }
 .break-time p{
-    min-width: 60px;
-    min-height: 60px;
+    min-width: 50px;
+    min-height: 50px;
     background:#fff;
     padding:3px;
     border-radius:7px;

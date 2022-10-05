@@ -23,6 +23,9 @@ const Summery = (props) => {
       </div>
       <div className="complete-btn">
         <button className="card-btn">Study completed</button>
+        <a href="#study-main" className="card-btn user-btn">
+          Back to top
+        </a>
       </div>
     </div>
   );

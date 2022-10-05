@@ -1,23 +1,78 @@
 .Study-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
+
 }
+
 .Study-container .title{
     margin:50px 0 30px;
 }
+.user-btn{
+    display: none;
+}
 .study-items-container{
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 30px ;
+    gap: 30px ;
+    justify-content: center;
+    order:1;
 }
 .study-information-container{
-    position: relative;
+    
+    position: relative; 
     background-color: #fff;
+    order:2;
     
 }
 .study-information{
-    position: sticky;
-    top:-100px;
+   position: sticky;
+    top:-40vh; 
     padding:20px;
+    
 }
+
+@media screen and (max-width:1440px) {
+
+}
+@media screen and (max-width:1024px) {
+    .Study-container{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    
+    }
+    
+    .study-items-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+     .user-details{
+        display:none;
+    } 
+}
+@media screen and (max-width:768px) {
+    .Study-container{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+    
+    }
+    .study-items-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:576px) {
+    .Study-container{
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-gap:50px;
+    
+    }
+    .user-btn{
+        width:50%;
+        display: block;
+        text-decoration:none;
+    }
+    
+    
+    
+}
+
 

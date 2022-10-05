@@ -11,7 +11,7 @@ const Header = () => {
         </div>
         <div>
           <h2>
-            <span>BCS</span> Preparation Pro
+            <span>BCS</span> Pro
           </h2>
           <p>Best Web Application for BCS exam</p>
         </div>
