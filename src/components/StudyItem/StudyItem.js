@@ -1,10 +1,11 @@
 import React from "react";
 import "./StudyItem.css";
 
-const StudyItem = (props) => {
-  const { img, name, studyTime, distribution } = props.details;
+const StudyItem = ({ details, addTopic }) => {
+  const { img, name, studyTime, distribution } = details;
+
   return (
-    <div class="study-item-card">
+    <div className="study-item-card">
       <div className="card-body">
         <div className="card-img">
           <img src={img} alt="" />
@@ -16,12 +17,14 @@ const StudyItem = (props) => {
             <strong>Number :</strong> {distribution}
           </p>
           <p>
-            <strong>Study time :</strong> {studyTime} hour
+            <strong>Study time :</strong> {studyTime} minute
           </p>
         </div>
       </div>
       <div className="card-footer">
-        <button className="card-btn">Add to list</button>
+        <button className="card-btn" onClick={() => addTopic(details)}>
+          Add to list
+        </button>
       </div>
     </div>
   );
