@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./StudyItem.css";
 
 const StudyItem = ({ details, addTopic }) => {
   const { img, name, studyTime, distribution } = details;
+  const [btnText, setBtnText] = useState("Add to the list");
+  const [btnclass, setBtnclass] = useState("card-btn");
 
   return (
     <div className="study-item-card">
@@ -22,8 +24,15 @@ const StudyItem = ({ details, addTopic }) => {
         </div>
       </div>
       <div className="card-footer">
-        <button className="card-btn" onClick={() => addTopic(details)}>
-          Add to list
+        <button
+          className={btnclass}
+          onClick={() => {
+            addTopic(details);
+            setBtnText("Topic added!!");
+            setBtnclass(btnclass + " added");
+          }}
+        >
+          {btnText}
         </button>
       </div>
     </div>

@@ -19,8 +19,9 @@ const Study = () => {
   }, []);
 
   useEffect(() => {
-    const previousData = getFromDb();
-    console.log(previousData);
+    const previousData = getFromDb("break-time");
+    const previousTotal = JSON.parse(getFromDb("total-study-time"));
+    setTotal(previousTotal);
     if (previousData) {
       setbreakTime(previousData);
     } else {
@@ -29,11 +30,17 @@ const Study = () => {
   }, [breakTime]);
 
   const addTopic = (topicDetails) => {
-    setTotal(total + topicDetails.studyTime);
+    const newTotal = total + topicDetails.studyTime;
+    setTotal(newTotal);
+    addToDb("total-study-time", newTotal);
   };
   const setBreakFromSummery = (data) => {
     setbreakTime(data);
-    addToDb(data);
+    const value = "break-time";
+    addToDb(value, data);
+  };
+  const resetTotal = () => {
+    setTotal(0);
   };
   return (
     <div className="Study-container">
@@ -59,7 +66,11 @@ const Study = () => {
           <User></User>
           <div className="test-p">
             <Break setBreak={setBreakFromSummery}></Break>
-            <Summery breakTime={breakTime} total={total}></Summery>
+            <Summery
+              breakTime={breakTime}
+              total={total}
+              fReset={resetTotal}
+            ></Summery>
           </div>
         </div>
       </div>

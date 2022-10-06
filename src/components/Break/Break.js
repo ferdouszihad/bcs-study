@@ -14,11 +14,11 @@ const Break = ({ setBreak }) => {
 
       <div className="break-container">
         <div className="break-time" id="break" onClick={breakTime}>
-          <p>20m</p>
-          <p>10m</p>
-          <p>30m</p>
-          <p>40m</p>
-          <p>50m</p>
+          <p id="b10">10m</p>
+          <p id="b20">20m</p>
+          <p id="b30">30m</p>
+          <p id="b40">40m</p>
+          <p id="b50">50m</p>
         </div>
       </div>
     </div>

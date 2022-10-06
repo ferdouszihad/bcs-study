@@ -3,7 +3,7 @@ import "./Summery.css";
 import Toasting from "../Utilites/Toasting";
 
 const Summery = (props) => {
-  const { total, breakTime } = props;
+  const { total, breakTime, fReset } = props;
   return (
     <div>
       <div className="work-container">
@@ -23,7 +23,7 @@ const Summery = (props) => {
         </div>
       </div>
       <div className="complete-btn">
-        <Toasting total={total}></Toasting>
+        <Toasting total={total} reset={fReset}></Toasting>
 
         <a href="#study-main" className="card-btn user-btn">
           Back to top

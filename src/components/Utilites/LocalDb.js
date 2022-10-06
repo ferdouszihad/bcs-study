@@ -1,11 +1,14 @@
-const addToDb = (data) => {
+const addToDb = (value, data) => {
   //   console.log(" I am from local storage ");
   //   console.log(data);
-
-  localStorage.setItem("breaktime", data);
+  localStorage.setItem(value, data);
 };
-const getFromDb = () => {
-  const local = localStorage.getItem("breaktime");
+
+const getFromDb = (value) => {
+  const local = localStorage.getItem(value);
   return local;
 };
-export { addToDb, getFromDb };
+const resetData = (value) => {
+  localStorage.setItem(value, 0);
+};
+export { addToDb, getFromDb, resetData };
