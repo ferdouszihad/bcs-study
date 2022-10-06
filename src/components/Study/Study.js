@@ -5,6 +5,7 @@ import "./Study.css";
 import Header from "../Header/Header";
 import Break from "../Break/Break";
 import Summery from "../Summery/Summery";
+import { addToDb, getFromDb } from "../Utilites/LocalDb";
 
 const Study = () => {
   const [studyItems, setStudyItems] = useState([]);
@@ -17,18 +18,28 @@ const Study = () => {
       .then((data) => setStudyItems(data));
   }, []);
 
+  useEffect(() => {
+    const previousData = getFromDb();
+    if (previousData) {
+      setbreakTime(previousData);
+    } else {
+      setbreakTime("0");
+    }
+  }, [breakTime]);
+
   const addTopic = (topicDetails) => {
     setTotal(total + topicDetails.studyTime);
+    addToDb(topicDetails);
   };
   const setBreakFromSummery = (data) => {
-    console.log(data);
     setbreakTime(data);
+    addToDb(data);
   };
   return (
     <div className="Study-container">
       <div className="study-main container" id="study-main">
         <Header></Header>
-        <a href="#user" class="card-btn user-btn">
+        <a href="#user" className="card-btn user-btn">
           See User Information
         </a>
         <h3 className="title">Add Study Topics to your list</h3>

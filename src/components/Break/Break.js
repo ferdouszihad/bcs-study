@@ -3,7 +3,9 @@ import "./Break.css";
 
 const Break = ({ setBreak }) => {
   const breakTime = (event) => {
+    console.log(event);
     const time = event.target.childNodes[0].textContent;
+
     setBreak(time.slice(0, 2));
   };
   return (
