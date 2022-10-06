@@ -21,7 +21,7 @@ const Study = () => {
   useEffect(() => {
     const previousData = getFromDb("break-time");
     const previousTotal = JSON.parse(getFromDb("total-study-time"));
-    setTotal(previousTotal);
+    setTotal(previousTotal ? previousTotal : 0);
     if (previousData) {
       setbreakTime(previousData);
     } else {
