@@ -1,5 +1,6 @@
 import React from "react";
 import "./Summery.css";
+import Toasting from "../Utilites/Toasting";
 
 const Summery = (props) => {
   const { total, breakTime } = props;
@@ -22,7 +23,8 @@ const Summery = (props) => {
         </div>
       </div>
       <div className="complete-btn">
-        <button className="card-btn">Study completed</button>
+        <Toasting total={total}></Toasting>
+
         <a href="#study-main" className="card-btn user-btn">
           Back to top
         </a>

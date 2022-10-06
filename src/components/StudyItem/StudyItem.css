@@ -60,6 +60,14 @@
 .card-btn:hover {
     border: none;
     background: #ea2929;
+    background-image: linear-gradient(45deg, #176b28, transparent,#176b28);
+    font-weight: 500;
+    color: #fff;
+    
+}
+.added {
+    border: none;
+    background: #ea5329;
     background-image: linear-gradient(45deg, #171717, transparent,#171717);
     font-weight: 500;
     color: #fff;

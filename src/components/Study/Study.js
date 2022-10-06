@@ -20,6 +20,7 @@ const Study = () => {
 
   useEffect(() => {
     const previousData = getFromDb();
+    console.log(previousData);
     if (previousData) {
       setbreakTime(previousData);
     } else {
@@ -29,7 +30,6 @@ const Study = () => {
 
   const addTopic = (topicDetails) => {
     setTotal(total + topicDetails.studyTime);
-    addToDb(topicDetails);
   };
   const setBreakFromSummery = (data) => {
     setbreakTime(data);
