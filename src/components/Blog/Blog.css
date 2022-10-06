@@ -1,0 +1,27 @@
+.blog-container{
+    margin-top:60px;
+    padding-bottom: 20px;
+}
+.blog-title{
+    text-align:center;
+}
+article{
+    background-color: rgba(255, 255, 255, 0.475);
+    padding:20px;
+    margin:30px auto;
+    border-radius: 15px;
+    transition: 1s all ease-in-out;
+    
+}
+
+article:hover  {
+    background-color: #fff;
+    background-blend-mode: color;
+    font-size: 1.1em;
+}
+.question{
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom:15px;
+}
